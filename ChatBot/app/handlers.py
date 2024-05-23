@@ -15,7 +15,7 @@ router = Router()
 
 @router.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer('Hi!', reply_markup=kb.main)
+    await message.answer('Hello!', reply_markup=kb.main)
     await message.reply('What do you want to know?')
 
 
